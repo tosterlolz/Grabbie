@@ -29,8 +29,7 @@ cargo build -r
 
 or if you're on Arch:
 ```bash
-git clone https://github.com/tosterlolz/Grabbie.git
-makepkg -si
+yay -S grabbie-git
 ```
 
 ### Usage
