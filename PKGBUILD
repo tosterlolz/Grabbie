@@ -1,6 +1,6 @@
 # Maintainer: TostetLolz <me@toster.lol>
 pkgname=grabbie
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=1
 pkgdesc="Grabbie is a tool to grab, download, or manage files and resources from various sources."
 arch=('x86_64')
