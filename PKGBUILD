@@ -1,3 +1,4 @@
+# Maintainer: TostetLolz <me@toster.lol>
 pkgname=Grabbie
 pkgver=0.1.0
 pkgrel=1
