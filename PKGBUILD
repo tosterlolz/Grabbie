@@ -1,4 +1,4 @@
-pkgname=grabbie
+pkgname=Grabbie
 pkgver=0.1.0
 pkgrel=1
 pkgdesc="Grabbie is a tool to grab, download, or manage files and resources from various sources."
