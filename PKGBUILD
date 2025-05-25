@@ -15,7 +15,8 @@ sha256sums=('SKIP')
 
 pkgver() {
   cd "$srcdir/$pkgname"
-  git describe --long --tags 2>/dev/null || echo "r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
+  git describe --long --tags 2>/dev/null | sed 's/^v//' | sed 's/-/_/g' || \
+    echo "r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
 }
 
 build() {
@@ -24,7 +25,7 @@ build() {
 }
 
 package() {
-  cd "$pkgname-$pkgver"
+  cd "$srcdir/$pkgname"
   install -Dm755 "target/release/grabbie" "$pkgdir/usr/bin/grabbie"
   install -Dm644 README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
   install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
