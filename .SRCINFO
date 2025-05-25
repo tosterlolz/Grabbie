@@ -1,6 +1,10 @@
 pkgbase = grabbie
 	pkgdesc = Grabbie is a tool to grab, download, or manage files and resources from various sources.
+<<<<<<< HEAD
 	pkgver = 0.1.1
+=======
+	pkgver = 0.1.0
+>>>>>>> 071f15081362d9d6c16a44240dde7e2b1a73050e
 	pkgrel = 1
 	url = https://github.com/tosterlolz/Grabbie
 	arch = x86_64
@@ -8,7 +12,11 @@ pkgbase = grabbie
 	makedepends = rust
 	makedepends = cargo
 	depends = gcc-libs
+<<<<<<< HEAD
 	source = grabbie-0.1.1.tar.gz::https://github.com/tosterlolz/Grabbie/archive/refs/tags/v0.1.1.tar.gz
+=======
+	source = grabbie-0.1.0.tar.gz::https://github.com/tosterlolz/Grabbie/archive/refs/tags/v0.1.0.tar.gz
+>>>>>>> 071f15081362d9d6c16a44240dde7e2b1a73050e
 	sha256sums = SKIP
 
 pkgname = grabbie
