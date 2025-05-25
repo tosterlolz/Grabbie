@@ -1,4 +1,5 @@
-# Grabbie
+# Grabbie 
+[![AUR version](https://img.shields.io/aur/version/grabbie-git.svg?style=for-the-badge)](https://aur.archlinux.org/packages/grabbie-git)
 
 Grabbie is an open-source tool designed to help you easily grab, download, or manage files and resources from various sources. Built with flexibility and simplicity in mind, Grabbie aims to streamline your workflow by providing an intuitive interface and a robust set of features.
 
