@@ -41,12 +41,6 @@ Basic usage example:
 grabbie https://example.com/file.txt
 ```
 
-[Explain main options and arguments.]
-
-## Configuration
-
-[Describe how to configure the tool, if applicable.]
-
 ## Contributing
 
 Contributions are welcome! Please open an issue to discuss your ideas or submit a pull request.
