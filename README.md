@@ -14,8 +14,8 @@ Grabbie is an open-source tool designed to help you easily grab, download, or ma
 
 ### Prerequisites
 
-- [Insert required software, e.g., Python 3.8+, Node.js, etc.]
-- [Insert any dependencies]
+- rust
+- cargo
 
 ### Installation
 
