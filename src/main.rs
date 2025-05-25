@@ -1,10 +1,11 @@
 mod cli;
 mod download;
 mod error;
+mod progress;
 
 use clap::Parser;
 use error::{GrabbieError, Result};
-use indicatif::{MultiProgress, ProgressBar};
+use indicatif::MultiProgress;
 use std::sync::Arc;
 use tokio::task;
 
@@ -28,7 +29,8 @@ async fn main() -> Result<()> {
         let data_file = data_file.map(str::to_string);
 
         let handle = task::spawn(async move {
-            let pb = mp_clone.add(ProgressBar::new_spinner());
+            // Always use the progress bar (with unknown length by default)
+            let pb = mp_clone.add(crate::progress::create_progress_bar(0));
             pb.set_message(format!("Downloading {}", url_clone));
 
             let res = if post_mode {

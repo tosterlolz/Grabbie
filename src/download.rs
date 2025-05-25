@@ -28,9 +28,11 @@ pub async fn download_post(client: &Client, url: &str, pb: ProgressBar, data_fil
 }
 
 async fn download_response(response: Response, url: &str, pb: ProgressBar) -> Result<()> {
-    let total_size = response
-        .content_length()
-        .unwrap_or(0);
+    let total_size = response.content_length().unwrap_or(0);
+
+    if total_size > 0 {
+        pb.set_length(total_size);
+    }
 
     pb.set_length(total_size);
 
